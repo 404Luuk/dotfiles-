@@ -1,0 +1,30 @@
+#
+# ~/.bashrc
+#
+
+#pacman
+alias x='sudo pacman -S --needed'
+alias xs='pacman -Ss'
+alias xr='sudo pacman -Rd'
+alias pm='sudo pacman'
+
+#quick file accessshortcuts
+alias qwe='vim ~/.bashrc'
+alias asd='vim ~/.config/i3/config'
+
+#network
+alias ip='sudo ip'
+alias down='sudo ip link set eno1 down'
+alias up='sudo ip link set eno1 up'
+
+alias uup='sudo ufw enable'
+alias udown='sudo ufw disable'
+alias usv='sudo ufw status verbose'
+alias usn='sudo ufw status numbered'
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
